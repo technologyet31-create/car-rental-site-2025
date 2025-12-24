@@ -1,0 +1,39 @@
+/* Home page hero banner */
+
+.hero-banner{
+  position:relative;
+  height:420px;
+  background: url("../img/banner.jpg") center/cover no-repeat;
+  background-attachment: fixed;
+  display:flex;
+  align-items:center;
+}
+
+.hero-overlay{
+  position:absolute;
+  inset:0;
+  background: linear-gradient(rgba(11,16,32,.88), rgba(11,16,32,.55));
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+  text-align:center;
+}
+
+.hero-content h1{
+  font-size: clamp(36px, 5vw, 64px);
+  margin:0 0 10px;
+  font-weight:950;
+  letter-spacing:1px;
+}
+.hero-content p{
+  font-size:18px;
+  color: var(--muted);
+  margin:0 0 18px;
+  line-height:1.9;
+}
+
+@media (max-width: 900px){
+  .hero-banner{height:320px}
+}

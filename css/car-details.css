@@ -1,0 +1,18 @@
+/* Car details page layout tweaks */
+
+.car-details-grid{
+  grid-template-columns: 1fr 1fr;
+  gap:16px;
+}
+
+.car-details-location-grid{
+  grid-template-columns: 1fr;
+  gap:16px;
+  margin-top:16px;
+}
+
+@media (max-width: 980px){
+  .car-details-grid{
+    grid-template-columns: 1fr;
+  }
+}
