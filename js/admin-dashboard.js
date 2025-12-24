@@ -25,10 +25,8 @@
       const el = $("adminCarMessage");
       if (!el) return;
       el.textContent = message;
-      el.style.display = message ? "block" : "none";
-      if (isError) {
-        el.style.borderColor = "rgba(255,255,255,.10)";
-      }
+      el.classList.toggle("is-hidden", !message);
+      void isError;
     }
 
     let editingCarId = null;

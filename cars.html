@@ -4,6 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>سياراتنا</title>
+  <link rel="preload" as="image" href="img/corolla.webp">
+  <link rel="preload" as="image" href="img/elantra.webp">
+  <link rel="preload" as="image" href="img/sportage.webp">
   <link rel="stylesheet" href="css/common.css" />
   <link rel="stylesheet" href="css/search.css" />
   <link rel="stylesheet" href="css/cards.css" />
@@ -44,23 +47,23 @@
     <h1 style="margin:0 0 12px;">سياراتنا</h1>
 
     <div class="search-bar">
-      <input type="text" placeholder="ابحث عن سيارة (الموديل، النوع، السنة)">
+      <input id="carSearchInput" type="text" placeholder="ابحث عن سيارة (الموديل، النوع، السنة)">
 
-      <select>
+      <select id="carCategorySelect">
         <option value="">الفئة</option>
-        <option>Economy</option>
-        <option>Sedan</option>
-        <option>SUV</option>
+        <option value="Economy">Economy</option>
+        <option value="Sedan">Sedan</option>
+        <option value="SUV">SUV</option>
       </select>
 
-      <select>
+      <select id="carPriceSelect">
         <option value="">السعر / اليوم</option>
-        <option>أقل من 150</option>
-        <option>150 - 250</option>
-        <option>أكثر من 250</option>
+        <option value="lt150">أقل من 150</option>
+        <option value="150to250">150 - 250</option>
+        <option value="gt250">أكثر من 250</option>
       </select>
 
-      <button class="btn btn-primary" type="button">بحث</button>
+      <button id="carSearchBtn" class="btn btn-primary" type="button">بحث</button>
     </div>
 
     <div id="carsGrid" class="grid cards"></div>
