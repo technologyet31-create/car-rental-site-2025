@@ -97,12 +97,26 @@
   .card-flip:hover .card-back{pointer-events:auto}
 }
 
+/* Touch-friendly flip (tap toggles .is-flipped via JS) */
+.card-flip.is-flipped .card-inner{
+  transform: rotateY(180deg);
+}
+.card-flip.is-flipped .card-face{pointer-events:none}
+.card-flip.is-flipped .card-back{pointer-events:auto}
+
 /* Allow keyboard users to flip when tabbing into actions */
 .card-flip:focus-within .card-inner{
   transform: rotateY(180deg);
 }
 .card-flip:focus-within .card-face{pointer-events:none}
 .card-flip:focus-within .card-back{pointer-events:auto}
+
+/* On touch, focus moves around during taps; don't auto-flip from focus */
+@media (hover:none) and (pointer:coarse){
+  .card-flip:focus-within .card-inner{transform:none}
+  .card-flip:focus-within .card-face{pointer-events:auto}
+  .card-flip:focus-within .card-back{pointer-events:none}
+}
 
 @media (prefers-reduced-motion: reduce){
   .card-flip .card-inner{transition:none}

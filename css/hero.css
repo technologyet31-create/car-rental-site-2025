@@ -195,9 +195,9 @@
 }
 
 /* Avoid fixed background on mobile for smoother scroll */
-@media (max-width: 900px){
+/* @media (max-width: 900px){
   .hero-banner{background-attachment: scroll}
-}
+} */
 
 /* =========================================
    Home page extra sections

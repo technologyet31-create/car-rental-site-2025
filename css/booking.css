@@ -1,0 +1,5 @@
+/* Booking page helpers (migrated from page-utils.css) */
+
+.page-title{margin:0 0 12px}
+
+.grid-span-full{grid-column:1/-1}

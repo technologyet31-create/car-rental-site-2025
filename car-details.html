@@ -32,7 +32,7 @@
     <div class="nav-cta signin">
       <button class="btn">Sign In ▾</button>
       <div class="signin-menu">
-        <a href="admin-login.html">أدمن</a>
+        <a href="sign-in.html">تسجيل الدخول</a>
       </div>
     </div>
 
@@ -43,7 +43,7 @@
 <main class="container">
   <section class="section">
     <div class="grid car-details-grid">
-      <div class="card" style="margin:0">
+      <div class="card card--flush">
         <div class="card-img"><img id="carImage" src="img/corolla.webp" alt="Car"></div>
         <div class="card-body">
           <div class="card-title"><span id="carTitle">—</span><span class="badge" id="carCategory">—</span></div>
@@ -53,7 +53,7 @@
       </div>
 
       <div class="form-card">
-        <h2 style="margin:0 0 12px;">المواصفات</h2>
+        <h2 class="section-title">المواصفات</h2>
         <div class="form-grid">
           <div>
             <label>الموديل</label>
@@ -71,7 +71,7 @@
             <label>عدد المقاعد</label>
             <input id="specSeats" value="" readonly>
           </div>
-          <div style="grid-column:1/-1">
+          <div class="grid-span-full">
             <label>الوصف</label>
             <textarea id="specDescription" readonly></textarea>
           </div>
@@ -86,7 +86,7 @@
 
     <div class="grid car-details-location-grid">
       <div class="form-card is-hidden" id="carLocationCard">
-        <h2 style="margin:0 0 12px;">موقع السيارة</h2>
+        <h2 class="section-title">موقع السيارة</h2>
         <iframe id="carLocationMap" class="map-embed" title="موقع السيارة" loading="lazy"></iframe>
         <div class="form-actions">
           <a class="btn" id="carLocationLink" href="#" target="_blank" rel="noopener noreferrer">فتح في Google Maps</a>

@@ -1,0 +1,39 @@
+/* Contact page layout (keeps existing design system) */
+
+.contact-title{margin:0 0 12px;}
+
+.contact-layout{
+  display:flex;
+  gap:16px;
+  flex-wrap:wrap;
+  align-items:flex-start;
+}
+
+/* RTL: first flex item appears on the right */
+.contact-col{
+  min-width:280px;
+}
+
+.contact-col--form{flex:1 1 520px;}
+.contact-col--side{flex:1 1 360px;}
+
+.contact-stack{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:16px;
+}
+
+.contact-grid-full{grid-column:1/-1;}
+
+.contact-social{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+/* iframe fill for map embed */
+.contact-map iframe{
+  border:0;
+  width:100%;
+  height:100%;
+}

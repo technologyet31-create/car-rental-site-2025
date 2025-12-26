@@ -16,3 +16,11 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Helpers used by car-details.html (migrated from page-utils.css) */
+
+.card--flush{margin:0}
+
+.section-title{margin:0 0 12px}
+
+.grid-span-full{grid-column:1/-1}

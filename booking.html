@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>الحجز</title>
   <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/booking.css" />
   <link rel="stylesheet" href="css/forms.css" />
   <script defer src="js/common.js"></script>
   <script defer src="js/booking.js"></script>
@@ -30,7 +31,7 @@
     <div class="nav-cta signin">
       <button class="btn">Sign In ▾</button>
       <div class="signin-menu">
-        <a href="admin-login.html">أدمن</a>
+        <a href="sign-in.html">تسجيل الدخول</a>
       </div>
     </div>
 
@@ -40,7 +41,7 @@
 
 <main class="container">
   <section class="section form-wrap">
-    <h1 style="margin:0 0 12px;">احجز الآن</h1>
+    <h1 class="page-title">احجز الآن</h1>
 
     <form class="form-card">
       <div class="form-grid">
@@ -76,7 +77,7 @@
           <label>الإجمالي</label>
           <input id="totalInput" type="text" placeholder="—" readonly>
         </div>
-        <div style="grid-column:1/-1">
+        <div class="grid-span-full">
           <label>ملاحظات</label>
           <textarea placeholder="أي ملاحظات إضافية..."></textarea>
         </div>
